@@ -7,7 +7,7 @@ public class Lesson_3 {
 
         Scanner in = new Scanner(System.in);
 
-        System.out.println("Задание 22");
+        System.out.println("Задание 1");
         System.out.println("Необходимо ввести 2 числа");
         System.out.println("Введите первое целое число: ");
         int num1 = in.nextInt();
