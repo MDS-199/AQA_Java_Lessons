@@ -60,6 +60,7 @@ public class Lesson_3 {
         for (int i = 0; i < massive1.length; i++){
             System.out.print(massive1[i] + " ");
         }
+        System.out.println("\n");
 
         System.out.println("Задание 7");
         int[] massive2 = new int[100];
@@ -69,6 +70,7 @@ public class Lesson_3 {
         for (int i = 0; i < massive2.length; i++){
             System.out.print(massive2[i] + " ");
         }
+        System.out.println("\n");
 
         System.out.println("Задание 8");
         System.out.println("Вывод первоначальных значений массива");
@@ -82,7 +84,7 @@ public class Lesson_3 {
             }
         }
         System.out.println("\n");
-        System.out.println("Вывод изменённых значений массива");
+        System.out.println("Вывод изменённых значений массива (умножаем на 2 те эллементы массива, которые меньше 6)");
         for (int i = 0; i < massive3.length; i++){
             System.out.print(massive3[i] + " ");
         }
