@@ -79,7 +79,7 @@ public class Lesson_3 {
         for (int i = 0; i < massive3.length; i++){
             if (massive3[i] < 6) {
                 massive3[i] *= 2;
-            };
+            }
         }
         System.out.println("\n");
         System.out.println("Вывод изменённых значений массива");
@@ -103,7 +103,7 @@ public class Lesson_3 {
                 else{
                     System.out.print(" ");
                 }
-            };
+            }
             System.out.println("");
         }
 
@@ -116,7 +116,6 @@ public class Lesson_3 {
         for (int i = 0; i < myArray.length; i++){
             System.out.print(myArray[i] + " ");
         }
-
     }
 
     public static boolean summInRange(int num1, int num2) {
