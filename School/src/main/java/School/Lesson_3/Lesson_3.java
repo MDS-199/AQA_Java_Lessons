@@ -22,7 +22,7 @@ public class Lesson_3 {
         numberSign (num3);
 
         System.out.println("Задание 3");
-        System.out.print("Введите целое число, если его знак положительный, то вывод будет true, если отрицательный - false: ");
+        System.out.print("Введите целое число, если его знак положительный, то вывод будет false, если отрицательный - true: ");
         int num4 = in.nextInt();
         returnSign (num4);
 
@@ -136,7 +136,7 @@ public class Lesson_3 {
     }
 
     public static boolean returnSign(int num4) {
-        boolean c = num4 >= 0;
+        boolean c = num4 <= 0;
         System.out.println(c);
         return c;
     }
