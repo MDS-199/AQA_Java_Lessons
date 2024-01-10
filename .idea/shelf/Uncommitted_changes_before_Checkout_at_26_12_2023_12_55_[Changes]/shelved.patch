@@ -1,0 +1,246 @@
+Index: School/src/main/java/School/Lesson_3/Lesson_3.java
+===================================================================
+diff --git a/School/src/main/java/School/Lesson_3/Lesson_3.java b/School/src/main/java/School/Lesson_4/Lesson_4.java
+rename from School/src/main/java/School/Lesson_3/Lesson_3.java
+rename to School/src/main/java/School/Lesson_4/Lesson_4.java
+--- a/School/src/main/java/School/Lesson_3/Lesson_3.java	
++++ b/School/src/main/java/School/Lesson_4/Lesson_4.java	
+@@ -1,165 +1,76 @@
+-package School.Lesson_3;
++package School.Lesson_4;
++import java.text.SimpleDateFormat;
+ import java.util.Arrays;
++import java.util.Date;
+ import java.util.Scanner;
+ 
+-public class Lesson_3 {
++public class Lesson_4 {
+     public static void main(String[] args) {
+ 
+-        Scanner in = new Scanner(System.in);
+-
+-        System.out.println("Задание 1");
+-        System.out.println("Необходимо ввести 2 числа");
+-        System.out.println("Введите первое целое число: ");
+-        int num1 = in.nextInt();
+-        System.out.println("Введите второе целое число: ");
+-        int num2 = in.nextInt();
+-        System.out.println("Выполняем проверку диапазона суммы чисел: если вывод - true, то сумма числе в диапазоне от 10 до 20 включительно, если false - то сумма чисел не входит в заданный диапазон");
+-        summInRange(num1, num2);
+-
+-        System.out.println("Задание 2");
+-        System.out.println("Введите целое число, знак которого необходимо узнать:");
+-        int num3 = in.nextInt();
+-        numberSign (num3);
+-
+-        System.out.println("Задание 3");
+-        System.out.print("Введите целое число, если его знак положительный, то вывод будет true, если отрицательный - false: ");
+-        int num4 = in.nextInt();
+-        returnSign (num4);
+-
+-        System.out.println("Задание 4");
+-        System.out.println("Введите строку, которую необходимо напечатать: ");
+-        String text = in.nextLine();
+-        String text1 = in.nextLine();
+-        System.out.println("Сколько раз необходимо напечатать эту строку ? ");
+-        int num5 = in.nextInt();
+-        stringsOutput (text1, num5);
+-
+-        System.out.println("Задание 5");
+-        System.out.println("Введите год, если вывод true - год високосный, если false - год не високосный: ");
+-        int num6 = in.nextInt();
+-        leapYearOrNot(num6);
+-
+-        System.out.println("Задание 6");
+-        int[] massive1 = {0,1,0,0,0,1} ;
+-        System.out.println("Вывод первоначальных значений массива");
+-        for (int i = 0; i < massive1.length; i++){
+-            System.out.print(massive1[i] + " ");
+-        }
++        class Person {
++            String fio;
++            String jobTitle;
++            String email;
++            long phoneNumber;
++            double salary;
++            int age;
+ 
+-        for (int i = 0; i < massive1.length; i++){
+-            if (massive1[i] == 0)
+-            {
+-                massive1[i] = 1;
++            public Person(){
++                this.fio = "Ivanov Ivan Ivanovich";
++                this.jobTitle = "Slesar KIPiA";
++                this.email = "Ivanov@yandex.ru";
++                this.phoneNumber = 8912332660L;
++                this.salary = 30000.0;
++                this.age = 18;
+             }
+-            else{
+-                massive1[i] = 0;
++            public Person(String fio, String jobTitle, String email, long phoneNumber, double salary, int age){
++                this.fio = fio;
++                this.jobTitle = jobTitle;
++                this.email = email;
++                this.phoneNumber = phoneNumber;
++                this.salary = salary;
++                this.age = age;
+             }
+-        }
+-        System.out.println("\n");
+-        System.out.println("Вывод изменённых значений массива");
+-        for (int i = 0; i < massive1.length; i++){
+-            System.out.print(massive1[i] + " ");
+-        }
+ 
+-        System.out.println("Задание 7");
+-        int[] massive2 = new int[100];
+-        for (int i = 0; i < massive2.length; i++){
+-            massive2[i] = i + 1;
+-        }
+-        for (int i = 0; i < massive2.length; i++){
+-            System.out.print(massive2[i] + " ");
+-        }
+-
+-        System.out.println("Задание 8");
+-        System.out.println("Вывод первоначальных значений массива");
+-        int[] massive3 = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1} ;
+-        for (int i = 0; i < massive3.length; i++){
+-            System.out.print(massive3[i] + " ");
+-        }
+-        for (int i = 0; i < massive3.length; i++){
+-            if (massive3[i] < 6) {
+-                massive3[i] *= 2;
+-            };
+-        }
+-        System.out.println("\n");
+-        System.out.println("Вывод изменённых значений массива");
+-        for (int i = 0; i < massive3.length; i++){
+-            System.out.print(massive3[i] + " ");
+-        }
+-        System.out.println("\n");
+-
+-        System.out.println("Задание 9");
+-        int[][] massive4 = new int[15][15];
+-        for (int i = 0;i < massive4.length; i++){
+-            for (int j = 0; j < massive4[i].length; j++){
+-                if(i==j){
+-                    massive4[i][j] = 1;
+-                    System.out.print(massive4[i][j]);
+-                }
+-                else if (j == massive4[i].length - i-1){
+-                    massive4[i][j] = 1;
+-                    System.out.print(massive4[i][j]);
+-                }
+-                else{
+-                    System.out.print(" ");
+-                }
+-            };
+-            System.out.println("");
++            void showEmploye(){
++                System.out.println("ФИО: " + fio);
++                System.out.println("Должность: " + jobTitle);
++                System.out.println("Email: " + email);
++                System.out.println("Номер телефона: " + phoneNumber);
++                System.out.println("Зарплата: " + salary);
++                System.out.println("Возраст: " + age);
++                System.out.println("\n");
++            }
+         }
+-
+-        System.out.println("Задание 10");
+-        System.out.println("Введите длинну массива: ");
+-        int len = in.nextInt();
+-        System.out.println("Введите число, которым нужно заполнить массив");
+-        int initialValue = in.nextInt();
+-        int [] myArray = setArray(len, initialValue);
+-        for (int i = 0; i < myArray.length; i++){
+-            System.out.print(myArray[i] + " ");
+-        }
+-
+-    }
+-
+-    public static boolean summInRange(int num1, int num2) {
+-        boolean b = num1 + num2 <= 20 && num1 + num2 >= 10;
+-        System.out.println(b);
+-        return b;
+-    }
+ 
+-    public static void numberSign (int num3){
+-        if (num3 >= 0) {
+-            System.out.println("Это положительное число");
+-        }
+-        else    {
+-            System.out.println("Это отрицательное число");
+-        }
+-    }
++        Person[] personArray = new Person[5];
++        personArray[0] = new Person();
++        personArray[1] = new Person("Petrov Sergei", "Director", "Petrov@mail.ru", 123438437L, 1000000.0, 52);
++        personArray[2] = new Person("Ibragimov Radmir", "Zamestitel Directora", "Ibragimov@mail.ru", 891238437L, 100000.0, 42);
++        personArray[3] = new Person("Chehov Ignat", "Content Maker", "Chehov@mail.ru", 651238437L, 70000.0, 32);
++        personArray[4] = new Person("Malashenko Vladimir", "Marketolog", "Malashenko@mail.ru", 6881238437L, 50000.0, 22);
++        personArray[0].showEmploye();
++        personArray[1].showEmploye();
++        personArray[2].showEmploye();
++        personArray[3].showEmploye();
++        personArray[4].showEmploye();
+ 
+-    public static boolean returnSign(int num4) {
+-        boolean c = num4 >= 0;
+-        System.out.println(c);
+-        return c;
+-    }
++        class Park{
++            String attractions;
++            class Attraction{
++                String attractionName;
++                Date workingTime;
++                SimpleDateFormat formatForDateNow = new SimpleDateFormat("hh:mm");
++                Double priceAttraction;
+ 
+-    public static void stringsOutput (String text1, int num5){
+-        if (num5 > 0){
+-            for (int i = 1; i <= num5; i++){
+-                System.out.println(text1);
+-            }
+-        }
+-        else {
+-            System.out.println("Введено неверное число");
++                public Attraction(){
++                    this.attractionName = "Default Attraction";
++                    this.workingTime = new Date();
++                    SimpleDateFormat formatForDateNow = new SimpleDateFormat("hh:mm");
++                    this.priceAttraction = 500.0;
++                }
++            }
+         }
++        Park newPark = new Park();
+     }
+-
+-    public static boolean leapYearOrNot (int num6){
+-        boolean d = num6 % 4==0 || num6 % 400==0;
+-        System.out.println(d);
+-        return d;
+-    }
+-
+-    public static int[] setArray (int len, int initialValue){
+-        int [] array = new int[len];
+-        Arrays.fill(array, initialValue);
+-        return (array);
+-    }
+ }
+Index: School/src/main/java/School/Lesson_3/Main.java
+===================================================================
+diff --git a/School/src/main/java/School/Lesson_3/Main.java b/School/src/main/java/School/Lesson_4/Main.java
+rename from School/src/main/java/School/Lesson_3/Main.java
+rename to School/src/main/java/School/Lesson_4/Main.java
+--- a/School/src/main/java/School/Lesson_3/Main.java	
++++ b/School/src/main/java/School/Lesson_4/Main.java	
+@@ -1,4 +1,4 @@
+-package School.Lesson_3;
++package School.Lesson_4;
+ 
+ // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
+ // then press Enter. You can now see whitespace characters in your code.
