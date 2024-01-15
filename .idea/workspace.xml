@@ -5,16 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57fae848-37f0-41da-8ff3-a05ebb521601" name="Changes" comment="Lesson 2 commit">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/ldasa.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_20_12_2023_18_06__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_20_12_2023_18_06__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_26_12_2023_12_55_[Changes]1/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_26_12_2023_12_55_[Changes]1/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_26_12_2023_12_55__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_26_12_2023_12_55__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_26_12_2023_12_55__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_26_12_2023_12_55__Changes_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_26_12_2023_12_55__Changes_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AQA_Java_Lessons.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AQA_Java_Lessons.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/School/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/School/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/School/src/main/java/School/Lesson_3/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/School/src/main/java/School/Lesson_4/Lesson_4.java" beforeDir="false" afterPath="$PROJECT_DIR$/School/src/main/java/School/Lesson_5/Lesson_5.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/School/src/main/java/School/Lesson_4/Lesson_4_1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/src/main/java/School/Lesson_5/Lesson_5_1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/src/main/java/School/Lesson_7/Lesson_7.java" beforeDir="false" afterPath="$PROJECT_DIR$/School/src/main/java/School/Lesson_8/Lesson_8.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/School/target/classes/School/Lesson_3/Lesson_3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/target/classes/School/Lesson_4/Lesson_4$1Park$Attraction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/target/classes/School/Lesson_4/Lesson_4$1Park.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/target/classes/School/Lesson_4/Lesson_4$1Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/target/classes/School/Lesson_4/Lesson_4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/target/classes/School/Lesson_4/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/target/classes/School/Lesson_6/Lesson_6$AppData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/target/classes/School/Lesson_6/Lesson_6.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +39,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Lesson_4" />
+        <entry key="$PROJECT_DIR$" value="Lesson_7" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -67,7 +75,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "Lesson__5",
+    "git-widget-placeholder": "Lesson__8",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "corretto-11",
     "onboarding.tips.debug.path": "C:/Users/ldasa/IdeaProjects/AQA_Java_Lessons/src/Main.java",
@@ -184,8 +192,17 @@
           <line>4</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.NoSuchElementException" package="java.util" />
+          <option name="timeStamp" value="4" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="((ListItr)iter).this$0" custom="java.util.ArrayList.ListItr" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
