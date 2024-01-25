@@ -6,7 +6,7 @@
       <excludeFolder url="file://$MODULE_DIR$/../../gradle/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/../../gradle/build" />
     </content>
-    <orderEntry type="jdk" jdkName="corretto-11" jdkType="JavaSDK" />
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
