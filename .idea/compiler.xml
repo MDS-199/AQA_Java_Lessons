@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/School/src/main/resources/archetype-resources" includeSubdirectories="true" />
+    </excludeFromCompile>
+    <bytecodeTargetLevel>
+      <module name="gradle" target="11" />
+      <module name="gradle.main" target="11" />
+      <module name="gradle.test" target="11" />
+      <module name="org.example.gradle" target="11" />
+      <module name="org.example.gradle.main" target="11" />
+      <module name="org.example.gradle.test" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
