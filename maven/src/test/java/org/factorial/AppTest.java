@@ -1,38 +1,42 @@
 package org.factorial;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import static org.testng.Assert.assertEquals;
 
 /**
  * Unit test for simple App.
  */
-public class AppTest 
-    extends TestCase
+public class AppTest
 {
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
+    @Test
+    public void testFactorialWithZero() {
+        int result = App.Factorial.calculate(0);
+        assertEquals(result, 1, "Factorial of 0 should be 1");
     }
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
+    @DataProvider(name = "positiveNumbers")
+    public Object[][] positiveNumbers() {
+        return new Object[][] {
+                {1, 1},
+                {2, 2},
+                {3, 6},
+                {4, 24},
+                {5, 120}
+        };
     }
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
+    @Test(dataProvider = "positiveNumbers")
+    public void testFactorialWithPositiveNumber(int input, int expected) {
+        int result = App.Factorial.calculate(input);
+        assertEquals(result, expected, "Factorial of " + input + " should be " + expected);
+    }
+
+    @Test
+    public void testFactorialWithNegativeNumber() {
+        int result = App.Factorial.calculate(-5);
+        assertEquals(result, 0, "Factorial of a negative number should be 0");
     }
 }

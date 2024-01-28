@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57fae848-37f0-41da-8ff3-a05ebb521601" name="Changes" comment="Test Commit">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/maven/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven/src/main/java/org/factorial/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/maven/src/main/java/org/factorial/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven/src/test/java/org/factorial/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/maven/src/test/java/org/factorial/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +23,9 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -36,12 +41,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "Lesson__12__testng",
     "ignore.virus.scanning.warn.message": "true",
     "onboarding.tips.debug.path": "C:/Users/ldasa/IdeaProjects/AQA_Java_Lessons/src/Main.java",
-    "project.structure.last.edited": "Global Libraries",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "configurable.group.tools"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -89,5 +95,19 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand>
+      <path>
+        <item name="AQA_Java_Lessons" type="b2602c69:ProjectViewProjectNode" />
+        <item name="dir{file://C:/Users/ldasa/Documents/GitHub/AQA_Java_Lessons/maven}" type="462c0819:PsiDirectoryNode" />
+      </path>
+      <path>
+        <item name="AQA_Java_Lessons" type="b2602c69:ProjectViewProjectNode" />
+        <item name="dir{file://C:/Users/ldasa/Documents/GitHub/AQA_Java_Lessons/maven}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file://C:/Users/ldasa/Documents/GitHub/AQA_Java_Lessons/maven/src}" type="462c0819:PsiDirectoryNode" />
+      </path>
+    </expand>
+    <select />
   </component>
 </project>
