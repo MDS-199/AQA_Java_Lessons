@@ -6,14 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="57fae848-37f0-41da-8ff3-a05ebb521601" name="Changes" comment="Lesson 2 commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/School/src/main/java/School/Lesson_8/Lesson_8.java" beforeDir="false" afterPath="$PROJECT_DIR$/School/src/main/java/School/Lesson_9/Lesson_9.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/School/src/main/java/School/Lesson_8/Lesson_8_1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/School/target/classes/School/Lesson_8/Lesson_8$PhoneBook.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/School/target/classes/School/Lesson_8/Lesson_8$WordsCounter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/School/target/classes/School/Lesson_8/Lesson_8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/School/target/classes/School/Lesson_8/Lesson_8_1$PhoneBook.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/School/target/classes/School/Lesson_8/Lesson_8_1$WordsCounter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/School/target/classes/School/Lesson_8/Lesson_8_1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/src/main/java/School/Lesson_9/Lesson_9.java" beforeDir="false" afterPath="$PROJECT_DIR$/School/src/main/java/School/Lesson_9/Lesson_9.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/target/classes/School/Lesson_9/Lesson_9$LoginReceiver.class" beforeDir="false" afterPath="$PROJECT_DIR$/School/target/classes/School/Lesson_9/Lesson_9$LoginReceiver.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Lesson_7" />
+        <entry key="$PROJECT_DIR$" value="Lesson_10" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -187,6 +181,11 @@
           <url>file://$PROJECT_DIR$/School/src/main/java/School/Lesson_5/Main.java</url>
           <line>4</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/School/src/main/java/School/Lesson_9/Lesson_9_1.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.util.NoSuchElementException" package="java.util" />

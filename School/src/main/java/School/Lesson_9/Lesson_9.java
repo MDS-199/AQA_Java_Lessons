@@ -154,9 +154,8 @@ public class Lesson_9 {
             System.out.println("Введите логин: ");
             Scanner input = new Scanner(System.in);
             String login = input.nextLine();
-            String str = "";
             while (true){
-                if (Objects.equals(login, str)){
+                if (login.trim().isEmpty()){
                     System.out.println("Вывод всех логинов на букву f");
                     loginList.stream().filter(s -> s.startsWith("f"))
                             .forEach(System.out::println);
