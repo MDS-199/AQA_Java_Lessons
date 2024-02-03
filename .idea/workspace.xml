@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57fae848-37f0-41da-8ff3-a05ebb521601" name="Changes" comment="Lesson 2 commit">
-      <change afterPath="$PROJECT_DIR$/School/src/main/java/School/Lesson_10/Lesson_10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_20_12_2023_18_06__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_20_12_2023_18_06__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_26_12_2023_12_55__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_26_12_2023_12_55__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/School/src/main/java/School/Lesson_9/Lesson_9.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/School/src/main/java/School/Lesson_9/Lesson_9_1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/School/target/classes/School/Lesson_9/Lesson_9$Expression.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/School/target/classes/School/Lesson_9/Lesson_9$ExpressionForPosition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/School/target/classes/School/Lesson_9/Lesson_9$ExpressionForWords.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/School/target/classes/School/Lesson_9/Lesson_9$Gender.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/School/target/classes/School/Lesson_9/Lesson_9$LoginReceiver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/School/target/classes/School/Lesson_9/Lesson_9$Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/School/target/classes/School/Lesson_9/Lesson_9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/School/src/main/java/School/Lesson_10/Lesson_10_1.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,11 +66,11 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "corretto-11",
     "onboarding.tips.debug.path": "C:/Users/ldasa/IdeaProjects/AQA_Java_Lessons/src/Main.java",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Problems",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.build.tools.auto.reload": "ALL",
-    "settings.editor.selected.configurable": "configurable.group.build"
+    "settings.editor.selected.configurable": "configurable.group.language"
   }
 }]]></component>
   <component name="RecentsManager">
