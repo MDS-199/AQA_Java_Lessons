@@ -128,7 +128,6 @@ class MtsByOnlineReplenishmentFillingTest {
         driver.findElement(By.xpath("//input[@id='connection-sum']")).sendKeys("100");
         driver.findElement(By.xpath("//*[@id='pay-connection']/button")).click();
         driver.switchTo().frame(driver.findElement(By.xpath("//div[@class='bepaid-app__container']//iframe")));
-        //driver.findElement(By.xpath("//div[@class='bepaid-app__container']//iframe"));
     }
     @Test
     void checkUpperSum(){
