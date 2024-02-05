@@ -4,7 +4,7 @@ import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
@@ -112,9 +112,48 @@ class MtsByOnlineReplenishmentPlaceholder4Test {
         WebElement placeholder = driver.findElement(By.xpath(xpathtypePlaceholder));
         assertEquals(placeholderExpected, placeholder.getAttribute("placeholder"));
     }
+}
+class MtsByOnlineReplenishmentFillingTest {
+    private static WebDriver driver;
+    @BeforeAll
+    static void setupDriver() {
+        driver = WebDriverManager.getDriver();
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+    }
+    @BeforeAll
+    static void fillInputReplenishment(){
+        driver.findElement(By.xpath("//button[@class='select__header']")).click();
+        driver.findElement(By.xpath("//p[text()='Услуги связи']")).click();
+        driver.findElement(By.xpath("//input[@placeholder='Номер телефона']")).sendKeys("297777777");
+        driver.findElement(By.xpath("//input[@id='connection-sum']")).sendKeys("100");
+        driver.findElement(By.xpath("//*[@id='pay-connection']/button")).click();
+        driver.switchTo().frame(driver.findElement(By.xpath("//div[@class='bepaid-app__container']//iframe")));
+        //driver.findElement(By.xpath("//div[@class='bepaid-app__container']//iframe"));
+    }
+    @Test
+    void checkUpperSum(){
+        WebElement upperSum = driver.findElement(By.xpath("//p[@class='header__payment-amount']"));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait.until(ExpectedConditions.visibilityOf(upperSum));
+        assertEquals("100.00 BYN" , upperSum.getText());
+    }
+    @Test
+    void checkBottomSum(){
+        WebElement bottomSum = driver.findElement(By.xpath("//button[@class='colored disabled ng-star-inserted']"));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait.until(ExpectedConditions.visibilityOf(bottomSum));
+        assertEquals("Оплатить 100.00 BYN" , bottomSum.getText());
+    }
+    @Test
+    void checkNumber(){
+        WebElement number = driver.findElement(By.xpath("//p[@class='header__payment-info']"));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait.until(ExpectedConditions.visibilityOf(number));
+        assertEquals("Оплата: Услуги связи Номер:375297777777" , number.getText());
+    }
     @AfterAll
     static void qoutDriver()
-        {
-            WebDriverManager.quitDriver();
-        }
+    {
+        WebDriverManager.quitDriver();
+    }
 }
