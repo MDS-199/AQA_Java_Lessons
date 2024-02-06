@@ -150,6 +150,17 @@ class MtsByOnlineReplenishmentFillingTest {
         wait.until(ExpectedConditions.visibilityOf(number));
         assertEquals("Оплата: Услуги связи Номер:375297777777" , number.getText());
     }
+    @ParameterizedTest
+    @CsvSource({
+            "assets/images/payment-icons/card-types/mastercard-system.svg",
+            "assets/images/payment-icons/card-types/visa-system.svg",
+            "assets/images/payment-icons/card-types/belkart-system.svg",
+            "assets/images/payment-icons/card-types/mir-system-ru.svg"
+    })
+    void checkLogoPaySystems(String logoPickLink){
+        String xpath = String.format("//img[@src='%s']", logoPickLink);
+        assertNotNull(driver.findElement(By.xpath(xpath)));
+    }
     @AfterAll
     static void qoutDriver()
     {
