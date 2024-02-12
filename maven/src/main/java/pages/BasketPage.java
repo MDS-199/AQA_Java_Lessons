@@ -45,12 +45,24 @@ public class BasketPage extends BasePage{
 
     public TreeMap<String, String> collectFirst3ItemsNameInBasket (BasketPage basketPage){
         TreeMap<String, String> namesInBasketCollection = new TreeMap<>();
-        String nameInBasketOne = "Наименования продукта 1: ";
-        String nameInBasketTwo = "Наименования продукта 2: ";
-        String nameInBasketThree = "Наименования продукта 3: ";
-        namesInBasketCollection.put(nameInBasketOne, productName("3"));
-        namesInBasketCollection.put(nameInBasketTwo, productName("2"));
-        namesInBasketCollection.put(nameInBasketThree, productName("1"));
+        String productNumberOne = "Наименования продукта 1: ";
+        String productNumberTwo = "Наименования продукта 2: ";
+        String productNumberThree = "Наименования продукта 3: ";
+        String nameInBasketOne = productName("3");
+/*        if (nameInBasketOne.contains("шт")){
+            nameInBasketOne = nameInBasketOne + ".";
+        }*/
+        String nameInBasketTwo = productName("2");
+/*        if (nameInBasketTwo.contains("шт")){
+            nameInBasketTwo = nameInBasketTwo + ".";
+        }*/
+        String nameInBasketThree = productName("1");
+/*        if (nameInBasketThree.contains("шт")){
+            nameInBasketThree = nameInBasketThree + ".";
+        }*/
+        namesInBasketCollection.put(productNumberOne, nameInBasketOne);
+        namesInBasketCollection.put(productNumberTwo, nameInBasketTwo);
+        namesInBasketCollection.put(productNumberThree, nameInBasketThree);
         return namesInBasketCollection;
     };
     public TreeMap<String, String> collectFirst3ItemsPriceInBasket (BasketPage basketPage){
@@ -63,4 +75,36 @@ public class BasketPage extends BasePage{
         pricesInBasketCollection.put(productNumberThree, productPrice("1"));
         return pricesInBasketCollection;
     };
+    public double sumFirst3ItemsInBasket (BasketPage basketPage){
+        double sum = 0;
+        Pattern pattern = Pattern.compile("\\d*");
+        String priceFirstItem =  basketPage.productPrice("1");
+        Matcher matcher = pattern.matcher(priceFirstItem);
+        if (matcher.find()) {
+            double numberString = Double.parseDouble(matcher.group());
+            sum += numberString;
+        } else {
+            System.out.println("Число не найдено.");
+            return 0;
+        }
+        String priceSecondItem =  basketPage.productPrice("2");
+        matcher = pattern.matcher(priceSecondItem);
+        if (matcher.find()) {
+            double numberString = Double.parseDouble(matcher.group());
+            sum += numberString;
+        } else {
+            System.out.println("Число не найдено.");
+            return 0;
+        }
+        String priceThirdItem =  basketPage.productPrice("3");
+        matcher = pattern.matcher(priceThirdItem);
+        if (matcher.find()) {
+            double numberString = Double.parseDouble(matcher.group());
+            sum += numberString;
+        } else {
+            System.out.println("Число не найдено.");
+            return 0;
+        }
+        return sum;
+    }
 }

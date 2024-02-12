@@ -18,45 +18,50 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class WBPurchaseTest extends BaseTest {
     @AfterEach
-    public void toMain(){
+    public void toMain() throws InterruptedException {
         headerComponent.toMainButton().click();
     }
-/*    @Test
+    @Test
     @Order(1)
     public void checkFirst3ProductsNames () throws InterruptedException {
         basePage.open("https://www.wildberries.ru/");
-        Thread.sleep(Long.parseLong("3000"));
         TreeMap<String, String> first3ProductsInMain = mainPage.collectFirst3ItemsName(mainPage);
         mainPage.toBasketFirst3Items(mainPage);
         headerComponent.purchaseButton().click();
-        Thread.sleep(Long.parseLong("3000"));
+        Thread.sleep(Long.parseLong("2000"));
         TreeMap<String, String> first3ProductsInBasket = basketPage.collectFirst3ItemsNameInBasket(basketPage);
         assertEquals(first3ProductsInMain, first3ProductsInBasket);
     }
     @Test
     @Order(2)
     public void checkFirst3ProductsPrices () throws InterruptedException {
-        Thread.sleep(Long.parseLong("3000"));
         TreeMap<String, String> first3PricesProductsInMain = mainPage.collectFirst3ItemsPrice(mainPage);
         mainPage.toBasketFirst3Items(mainPage);
         headerComponent.purchaseButton().click();
-        Thread.sleep(Long.parseLong("3000"));
+        Thread.sleep(Long.parseLong("2000"));
         TreeMap<String, String> firstPricesProductsInBasket = basketPage.collectFirst3ItemsPriceInBasket(basketPage);
         assertEquals(first3PricesProductsInMain, firstPricesProductsInBasket);
-    }*/
+    }
     @Test
     public void checkQuantityProductsInMainAndBasket () throws InterruptedException {
-        basePage.open("https://www.wildberries.ru/");
-        Thread.sleep(Long.parseLong("3000"));
         mainPage.toBasketFirst3Items(mainPage);
         String quantityInMain = headerComponent.checkQuantityAllProducts();
         headerComponent.purchaseButton().click();
-        Thread.sleep(Long.parseLong("3000"));
+        Thread.sleep(Long.parseLong("2000"));
         String quantityInBasket = basketPage.productsQuantity();
         assertEquals(quantityInMain, quantityInBasket);
     }
-/*    @AfterAll
+    @Test
+    public void checkSumInMainAndBasket () throws InterruptedException {
+        mainPage.toBasketFirst3Items(mainPage);
+        double sumInMain = mainPage.sumFirst3Items(mainPage);
+        headerComponent.purchaseButton().click();
+        Thread.sleep(Long.parseLong("2000"));
+        double sumInBasket = basketPage.sumFirst3ItemsInBasket(basketPage);;
+        assertEquals(sumInMain, sumInBasket);
+    }
+    @AfterAll
     public static void endWork(){
         CommonActions.quitDriver();
-    }*/
+    }
 }

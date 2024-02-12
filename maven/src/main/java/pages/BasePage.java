@@ -15,8 +15,11 @@ public class BasePage {
     public void open(String url){
         driver.get(url);
     }
+    public void close(){
+        driver.close();
+    }
     public WebElement waitElementIsVisible (WebElement element){
-        new WebDriverWait(driver, Duration.ofSeconds(5)).until(ExpectedConditions.visibilityOf(element));
+        new WebDriverWait(driver, Duration.ofSeconds(2)).until(ExpectedConditions.visibilityOf(element));
         return element;
     }
 }

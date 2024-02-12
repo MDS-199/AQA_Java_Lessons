@@ -6,7 +6,10 @@ import org.openqa.selenium.WebElement;
 
 import java.util.HashMap;
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.TreeMap;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class MainPage extends BasePage {
     public MainPage(WebDriver driver) {
@@ -53,26 +56,56 @@ public class MainPage extends BasePage {
         pricesInMainCollection.put(productNumberThree, mainPage.productPrice("3"));
         return pricesInMainCollection;
     };
-    public double sumFirst3Items (){
-        
+    public double sumFirst3Items (MainPage mainPage){
+        double sum = 0;
+        Pattern pattern = Pattern.compile("\\d*");
+        String priceFirstItem =  mainPage.productPrice("1");
+        Matcher matcher = pattern.matcher(priceFirstItem);
+        if (matcher.find()) {
+            double numberString = Double.parseDouble(matcher.group());
+            sum += numberString;
+        } else {
+            System.out.println("Число не найдено.");
+            return 0;
+        }
+        String priceSecondItem =  mainPage.productPrice("2");
+        matcher = pattern.matcher(priceSecondItem);
+        if (matcher.find()) {
+            double numberString = Double.parseDouble(matcher.group());
+            sum += numberString;
+        } else {
+            System.out.println("Число не найдено.");
+            return 0;
+        }
+        String priceThirdItem =  mainPage.productPrice("3");
+        matcher = pattern.matcher(priceThirdItem);
+        if (matcher.find()) {
+            double numberString = Double.parseDouble(matcher.group());
+            sum += numberString;
+        } else {
+            System.out.println("Число не найдено.");
+            return 0;
+        }
+        return sum;
     }
 
     public void toBasketFirst3Items(MainPage mainPage){
-        List<WebElement> menuElements = driver.findElements(By.className("sizes-list"));
         mainPage.productPurchaseButton("1").click();
-        if (!menuElements.isEmpty()){
+        try {
             mainPage.productSizeButton().click();
         }
+        catch (org.openqa.selenium.NoSuchElementException e){}
+
         mainPage.productPurchaseButton("2").click();
-        menuElements = driver.findElements(By.className("sizes-list"));
-        if (!menuElements.isEmpty()){
+        try {
             mainPage.productSizeButton().click();
         }
+        catch (org.openqa.selenium.NoSuchElementException e){}
         mainPage.productPurchaseButton("3").click();
-        menuElements = driver.findElements(By.className("sizes-list"));
-        if (!menuElements.isEmpty()){
+        try {
             mainPage.productSizeButton().click();
         }
+        catch (org.openqa.selenium.NoSuchElementException e){}
     }
 
 }
