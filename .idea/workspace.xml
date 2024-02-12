@@ -4,7 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57fae848-37f0-41da-8ff3-a05ebb521601" name="Changes" comment="Test Commit" />
+    <list default="true" id="57fae848-37f0-41da-8ff3-a05ebb521601" name="Changes" comment="Test Commit">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven/src/main/java/common/CommonActions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven/src/main/java/common/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven/src/main/java/pages/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven/src/main/java/pages/BasketPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven/src/main/java/pages/HeaderComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven/src/main/java/pages/MainPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven/src/test/java/org/example/base/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven/src/test/java/org/example/wildberrriespurchasetest/WBPurchaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/maven/src/main/java/org/example/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven/src/test/java/org/example/MtsByOnlineReplenishmentPlaceholderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven/src/test/java/org/example/WebDriverManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven/target/classes/org/example/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/maven/target/classes/org/example/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven/target/test-classes/org/example/MtsByOnlineReplenishmentFillingTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven/target/test-classes/org/example/MtsByOnlineReplenishmentPlaceholder2Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven/target/test-classes/org/example/MtsByOnlineReplenishmentPlaceholder3Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven/target/test-classes/org/example/MtsByOnlineReplenishmentPlaceholder4Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven/target/test-classes/org/example/MtsByOnlineReplenishmentPlaceholderTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven/target/test-classes/org/example/WebDriverManager.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +50,9 @@
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2ZUH2gnpB2aRTKgxjVMvmeog87g" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -39,7 +62,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Lesson__14&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Lesson__15&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/ldasa/IdeaProjects/AQA_Java_Lessons/src/Main.java&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
@@ -90,6 +113,21 @@
           <url>file://$PROJECT_DIR$/src/Main.java</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/maven/src/test/java/org/example/wildberrriespurchasetest/WBPurchaseTest.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/maven/src/test/java/org/example/wildberrriespurchasetest/WBPurchaseTest.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/maven/src/main/java/pages/BasketPage.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
