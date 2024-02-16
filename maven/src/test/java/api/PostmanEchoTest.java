@@ -1,18 +1,9 @@
 package api;
 
 import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
 import org.junit.jupiter.api.Test;
-import org.json.JSONObject;
-import static io.restassured.path.json.JsonPath.*;
-
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class PostmanEchoTest
 {
@@ -37,8 +28,6 @@ public class PostmanEchoTest
             .statusCode(200)
             .assertThat()
             .body("data", equalTo(null));
-        //String responseBodyWithoutIdCookie = with(responseBody).delete("id").get().toString();
-        //assertEquals(getExpectedBody, responseBody);
     }
     @Test
     public void checkPostStatus(){
