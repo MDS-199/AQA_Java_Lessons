@@ -7,7 +7,6 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class PostmanEchoTest
 {
-    String getExpectedBody = ExpectedBody.getExpectedBody;
  @Test
     public void checkGetOutputStatus(){
         given()

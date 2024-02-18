@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="57fae848-37f0-41da-8ff3-a05ebb521601" name="Changes" comment="Test Commit">
-      <change beforePath="$PROJECT_DIR$/maven/src/test/java/api/PostmanEchoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/maven/src/test/java/api/PostmanEchoTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="57fae848-37f0-41da-8ff3-a05ebb521601" name="Changes" comment="Test Commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
