@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57fae848-37f0-41da-8ff3-a05ebb521601" name="Changes" comment="Test Commit">
-      <change afterPath="$PROJECT_DIR$/maven/src/test/java/org/example/AndroidDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maven/src/test/java/org/example/Pixel3aMobileTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maven/src/test/java/org/screens/CalculatorApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maven/src/test/java/org/screens/MainScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/maven/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/maven/src/test/java/org/example/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven/src/properties/calculator-7-8-271241277.apk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven/src/test/java/org/screens/CalculatorApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maven/src/test/java/org/screens/MainScreen.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
