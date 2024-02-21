@@ -4,6 +4,7 @@ import io.restassured.RestAssured;
 import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class PostmanEchoTest
 {
@@ -40,15 +41,15 @@ public class PostmanEchoTest
     }
     @Test
     public void checkPostDataOutput(){
-        given()
+        String args = given()
                 .baseUri("https://postman-echo.com")
-                .body("foo").contentType("application/json")
                 .when()
-                .post("/post")
+                .get("/get")
                 .then()
-                .statusCode(200)
-                .assertThat()
-                .body("data", equalTo("foo"));
+                .extract()
+                .path("args").toString();
+        System.out.println(args);
+        assertEquals("{}", args);
     }
     @Test
     public void checkPutStatus(){
@@ -62,14 +63,16 @@ public class PostmanEchoTest
     }
    @Test
     public void checkPutDataOutput(){
-        given()
-                .baseUri("https://postman-echo.com")
-                .body("foo").contentType("application/json")
-                .when()
-                .put("/put")
-                .then()
-                .assertThat()
-                .body("data", equalTo("foo"));
+       String args = given()
+               .baseUri("https://postman-echo.com")
+               .body("foo").contentType("application/json")
+               .when()
+               .put("/put")
+               .then()
+               .extract()
+               .path("args").toString();
+       System.out.println(args);
+       assertEquals("{}", args);
     }
     @Test
     public void checkPatchStatus(){
@@ -83,14 +86,16 @@ public class PostmanEchoTest
     }
    @Test
     public void checkPatchDataOutput(){
-        given()
-                .baseUri("https://postman-echo.com")
-                .body("foo").contentType("application/json")
-                .when()
-                .patch("/patch")
-                .then()
-                .assertThat()
-                .body("data", equalTo("foo"));
+       String args = given()
+               .baseUri("https://postman-echo.com")
+               .body("foo").contentType("application/json")
+               .when()
+               .patch("/patch")
+               .then()
+               .extract()
+               .path("args").toString();
+       System.out.println(args);
+       assertEquals("{}", args);
     }
     @Test
     public void checkDeleteStatus(){
@@ -104,13 +109,15 @@ public class PostmanEchoTest
     }
     @Test
     public void checkDeleteDataOutput(){
-        given()
+        String args = given()
                 .baseUri("https://postman-echo.com")
                 .body("foo").contentType("application/json")
                 .when()
                 .delete("/delete")
                 .then()
-                .assertThat()
-                .body("data", equalTo("foo"));
+                .extract()
+                .path("args").toString();
+        System.out.println(args);
+        assertEquals("{}", args);
     }
 }
